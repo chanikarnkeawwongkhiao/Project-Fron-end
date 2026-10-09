@@ -1,4 +1,4 @@
-# Project Lost & Found ICT
+# Lost & Found ICT
 
 ระบบบริหารจัดการของหายและของที่พบภายในคณะ ICT มหาวิทยาลัยพะเยา
 
@@ -227,7 +227,8 @@ npm run dev
 |--------|-----------|
 | [requirements.md](./requirements.md) | ข้อกำหนดฉบับเต็มของระบบ 12 หัวข้อ: วัตถุประสงค์ (G-1–G-6) ฟีเจอร์ (F-01–F-10) การเตรียมประชุมด้วย AI (MP-01–MP-07) กฎทางธุรกิจ (BR-01–BR-11) ขั้นตอนการใช้งาน (WF-01–WF-09) โครงสร้างฐานข้อมูล 14 ตาราง ตัวอย่าง Query (Q-A–Q-N) ข้อจำกัด (C1–C9) สิ่งที่ไม่ต้องทำ (N-01–N-13) หลักการออกแบบ (KP-01–KP-09) และสิ่งที่ต้องส่งมอบ (D-01–D-12) |
 | [docs/DESIGN_DECISIONS.md](./docs/DESIGN_DECISIONS.md) | บันทึกการตัดสินใจออกแบบ 22 ข้อ (DD-01–DD-22) พร้อมทางเลือกที่พิจารณา เหตุผล ผลกระทบ และสถานะ |
-| [docs/GAP_ANALYSIS.md](./docs/GAP_ANALYSIS.md) | ผลเปรียบเทียบสเปกกับโค้ดจริง: ช่องว่างรายฟีเจอร์ (F-01–F-10) ช่องว่างรายกฎธุรกิจ (BR-01–BR-11) ความคลาดเคลื่อนสคีมา ปัญหาที่พบ และลำดับการแก้ไข |
-| [docs/deliverables/DATA_DICTIONARY.md](./docs/deliverables/DATA_DICTIONARY.md) | พจนานุกรมข้อมูล 14 ตาราง + 16 RPC + Storage 4 bucket + ชุดค่าสถานะ พร้อมระดับหลักฐานรายคอลัมน์ (✅ โค้ดจริง / ⬜ คอมเมนต์นักพัฒนา / ❓ ต้องยืนยัน) |
-| [docs/deliverables/ER_DIAGRAM.md](./docs/deliverables/ER_DIAGRAM.md) | แผนภาพความสัมพันธ์ ER ของฐานข้อมูล (ไฟล์เปล่าสำหรับเติม) |
-| [docs/deliverables/schema.sql](./docs/deliverables/schema.sql) | DDL ของฐานข้อมูล: ตาราง/enum/RLS/RPC (ไฟล์เปล่าสำหรับเติม) |
+| [docs/GAP_ANALYSIS.md](./docs/GAP_ANALYSIS.md) | เทียบระบบปัจจุบันกับ requirements 8 หัวข้อ: สรุปภาพรวม · ตาราง FR (F-01–F-10/MP) · ตาราง BR-01–BR-11 · UI ที่เพิ่มรอบนี้ (ไฟล์จริง) · วิธีที่ตรวจสอบ · สิ่งที่ยังไม่ทำ · ขั้นตอนถัดไป |
+| [docs/deliverables/DATA_DICTIONARY.md](./docs/deliverables/DATA_DICTIONARY.md) | พจนานุกรมข้อมูล 14 ตาราง + 16 RPC + Storage 4 bucket + ชุดค่าสถานะ พร้อมระดับหลักฐานรายคอลัมน์ (✅ จริง / ⬜ สันนิษฐาน / ❓ ต้องยืนยัน) |
+| [docs/deliverables/ER_DIAGRAM.md](./docs/deliverables/ER_DIAGRAM.md) | แผนภาพ ER แบบเต็ม (Mermaid erDiagram) 14 ตาราง + ตารางสรุป Relationship 23 เส้น (1:1 / 1:N) พร้อม FK และระดับหลักฐาน |
+| [docs/deliverables/schema.sql](./docs/deliverables/schema.sql) | DDL ร่าง (MySQL 8 / InnoDB) ครบ 14 ตาราง + 24 FK — ยังไม่รวม enum/RLS/RPC |
+| [docs/deliverables/QUERIES.sql](./docs/deliverables/QUERIES.sql) | ตัวอย่างคำสั่ง SQL ตาม Q-A–Q-N ครบ 14 operation (MySQL 8 ให้ตรง schema.sql) |
